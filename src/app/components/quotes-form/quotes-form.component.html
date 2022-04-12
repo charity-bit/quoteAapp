@@ -1,38 +1,50 @@
-
 <div class="quotes-form">
     <h2>Share a quote</h2>
-    <form #quoteForm="ngForm" 
-     (ngSubmit)="postQuote()">
-           <div class="name-div cont">
-            <label for="name">Name</label> 
-            <input type="text" id="name" 
-            placeholder="Enter Your Name"
-            required
-            name="name"
-            #uname = 'ngModel'
-            [(ngModel)] = "name"
-            >  
-           </div> 
-           <div class="author-div cont">
-               <label for="author">Author</label>
-               <input type="text" id="author"
-                name="author"
-                #author = 'ngModel'
-                required
-                [(ngModel)] = "author"
-                placeholder="Quote By...">
-           </div>
-           <div class="quote-div cont">
-               <label for="quote">Quote</label>
-               <textarea id="quote" name="quote"
-                cols="30" rows="10"
-                #quote='ngModel'
-                required
-                [(ngModel)]="quote"
-                placeholder="Enter Quote"></textarea>
-           </div>
-           <button type="submit">Post</button>
-          
-
+    <form>
+      <div class="name-div cont">
+        <label for="uname">Name</label>
+        <!-- <p>{{ newQuote.name }}</p>
+        <p>{{ newQuote.author }}</p>
+        <p>{{ newQuote.quote }}</p> -->
+  
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Your Name"
+          required
+          name="uname"
+          #myUsername
+        />
+      </div>
+      <div class="author-div cont">
+        <label for="author">Author</label>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          #myAuthor
+          required
+          placeholder="Quote By..."
+        />
+      </div>
+      <div class="quote-div cont">
+        <label for="quote">Quote</label>
+        <textarea
+          id="quote"
+          name="quote"
+          cols="30"
+          rows="10"
+          #myQuote
+          required
+          placeholder="Enter Quote"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        (click)="postQuote(myUsername.value, myAuthor.value, myQuote.value)"
+      >
+        Post
+      </button>
     </form>
-</div>
+  </div>
+  

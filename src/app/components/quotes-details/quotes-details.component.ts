@@ -25,6 +25,4 @@ export class QuotesDetailsComponent implements OnInit{
     let diff:any = currentTime - val;   
     return diff;
   }
-
-
 }
