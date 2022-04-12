@@ -1,18 +1,35 @@
 
 <div class="quotes-form">
     <h2>Share a quote</h2>
-    <form #quoteForm="ngForm">
+    <form #quoteForm="ngForm" [formGroup]="quote-form"
+     (ngSubmit)="postQuote()">
            <div class="name-div cont">
             <label for="name">Name</label> 
-            <input type="text" id="name" placeholder="Enter Your Name">  
+            <input type="text" id="name" 
+            placeholder="Enter Your Name"
+            required
+            name="name"
+            #name = 'ngModel'
+            [(ngModel)] = "newQuote.name"
+            >  
            </div> 
            <div class="author-div cont">
                <label for="author">Author</label>
-               <input type="text" id="author" placeholder="Quote By...">
+               <input type="text" id="author"
+                name="author"
+                #author = 'ngModel'
+                required
+                [(ngModel)] = "newQuote.author"
+                placeholder="Quote By...">
            </div>
            <div class="quote-div cont">
                <label for="quote">Quote</label>
-               <textarea name="" id="" cols="30" rows="10" placeholder="Enter Quote"></textarea>
+               <textarea id="quote" name="quote"
+                cols="30" rows="10"
+                #quote='ngModel'
+                required
+                [(ngModel)]="newQuote.quote"
+                placeholder="Enter Quote"></textarea>
            </div>
            <button type="submit">Post</button>
     </form>

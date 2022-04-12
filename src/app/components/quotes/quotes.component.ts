@@ -21,6 +21,7 @@ export class QuotesComponent implements OnInit {
      new Quote("When one door closes, another opens, but we often look so long at the closed door that we do not see the one that has been opened for us","Hellen Keller","John"),
      
    ]
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -29,6 +30,7 @@ export class QuotesComponent implements OnInit {
 
   upVote(index:number){
     this.quotes[index].upVote +=1;
+  
 
   }
   deleteQuote(toDelete:boolean,index:number){
@@ -38,8 +40,22 @@ export class QuotesComponent implements OnInit {
         this.quotes.splice(index,1);
       }
     }
-   
-  
+  }
+  onAddQuote(quote:Quote){
+      if(quote.name == "" || quote.author == "" || quote.quote == ""){
+          if(quote.name == ""){
+            alert("Please enter your name")
+          }
+          else if(quote.author){
+            alert("Please enter the author of the quote")
+          }
+          else{
+            alert("Please enter the quote")
+          }
+      }
+      else{
+        this.quotes.unshift(quote);
+      }
   }
 
   downVote(index:number){

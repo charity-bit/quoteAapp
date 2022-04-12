@@ -14,13 +14,15 @@
     display: flex;
     justify-content: space-between;
 }
+
 .left p {
     font-size: 1.2rem;
     font-family: "Inconsolata",sans-serif;
+    
 }
-.left small{
+.left small{ 
     position: relative;
-    left: 20%;
+    text-align: center;
 }
 .left small::before{
     content: "";
