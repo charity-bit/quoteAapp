@@ -18,7 +18,6 @@
     transition: all 1s ease-in-out;
   }
   .quote:hover{
-    
     transform: scale(1.1);
   }
 
