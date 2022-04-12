@@ -16,7 +16,8 @@
           <div class="top">
             <div class="left">
               <p>{{ quote.quote }}</p>
-              <small>{{ quote.author }}</small>
+              
+              <small><span>~</span>{{ quote.author }}</small>
               <div class="votes">
                 <div class="likes" (click)="upVote(i)">
                   <fa-icon [icon]="likes"></fa-icon>
@@ -52,7 +53,7 @@
           <div class="top">
             <div class="left">
               <p>{{ quote.quote }}</p>
-              <small>{{ quote.author }}</small>
+              <small><span>~</span>{{ quote.author }}</small>
               <div class="votes">
                 <div class="likes" (click)="upVote(i)">
                   <fa-icon [icon]="likes"></fa-icon>
