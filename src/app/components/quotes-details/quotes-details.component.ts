@@ -8,14 +8,22 @@ import {Quote} from "../../Quote";
   styleUrls: ['./quotes-details.component.css']
 })
 export class QuotesDetailsComponent implements OnInit{
+
   @Input() quote:Quote;
   @Output() onDelete:EventEmitter<boolean> = new EventEmitter<boolean>();
+  
   deleteIcon = faTrash;
   constructor() { }
   ngOnInit(): void {
   }
   deleteQuote(toDelete:boolean){
     this.onDelete.emit(toDelete);
+  }
+
+  getDifference(val:any){
+    let currentTime:any = new Date();
+    let diff:any = currentTime - val;   
+    return diff;
   }
 
 

@@ -9,8 +9,8 @@
             placeholder="Enter Your Name"
             required
             name="name"
-            #name = 'ngModel'
-            [(ngModel)] = "newQuote.name"
+            #uname = 'ngModel'
+            [(ngModel)] = "name"
             >  
            </div> 
            <div class="author-div cont">
@@ -19,7 +19,7 @@
                 name="author"
                 #author = 'ngModel'
                 required
-                [(ngModel)] = "newQuote.author"
+                [(ngModel)] = "author"
                 placeholder="Quote By...">
            </div>
            <div class="quote-div cont">
@@ -28,9 +28,11 @@
                 cols="30" rows="10"
                 #quote='ngModel'
                 required
-                [(ngModel)]="newQuote.quote"
+                [(ngModel)]="quote"
                 placeholder="Enter Quote"></textarea>
            </div>
            <button type="submit">Post</button>
+          
+
     </form>
 </div>
