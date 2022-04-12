@@ -39,8 +39,8 @@ export class QuotesComponent implements OnInit {
   ];
 
   highestQuote: Quote = new Quote(
-    'life is fun, code is even better',
-    'samuel martins',
+    'to Mars we must go',
+    'Elon Musk',
     'Orina',new Date()
   );
 
