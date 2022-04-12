@@ -1,4 +1,4 @@
-# QuotesApp
+
 
 
 
@@ -28,7 +28,8 @@ This is an application that allows users to post the quotes that inspire them an
 
 ## Description
 
-<p> Pizza hub is a website for a fictional pizza restaurant where users can order pizza and Choose whether they want it to be delivered to the or not</p>
+<p> This is an application that allows users to post the quotes that inspire them and have them voted.
+</p>
 
 
 
@@ -48,7 +49,7 @@ This is an application that allows users to post the quotes that inspire them an
 
 Click on the link below to view the live site
 
-<a href="https://charity-bit.github.io/pizzahub">https://charity-bit.github.io/pizzahub/<a>
+<a href="https://charity-bit.github.io/quoteAapp/">https://charity-bit.github.io/quoteAapp/<a>
 
 
 
@@ -57,18 +58,17 @@ Click on the link below to view the live site
 
 ## Technology Used
 
-- HTML - which was used to build the structure of the pages.
+- ANGULAR
 
-- CSS - which was used to style the pages.
+- CSS 
 
-- JAVASCRIPT - which was used to toggle between classes for navigation.
+- TYPESCRIPT.
 
-- BOOSTRAP - used incombination with css for styling.
-- JQUERY - used in combination with vanilla js for DOM manipulation
 
 ## Reference
 
 - <a href="https://developer.mozilla.org/en-US/"> MDN Web Docs</a>
+<a href="https://angular.io/">Angular official documentation</a>
 
 ## Licence
 MIT License
@@ -93,13 +93,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
- ## TO Do
-  <ul>
-    <li>Odering details validation </li>
-      </ul>
+
  
 
- [Go Back to the top](#pizzahub)
+ [Go Back to the top](#QuotesApp)
 
 ## Authors Info
 
