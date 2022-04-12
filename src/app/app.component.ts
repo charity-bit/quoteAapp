@@ -19,10 +19,6 @@ export class AppComponent {
   random:number;
 
   constructor(){}
-  //  changeRandom(arr:mainQuote[],x:number){
-  //   x = Math.floor(Math.random()* arr.length) 
-    
-  // }
 
 
 

@@ -8,9 +8,7 @@ import { Quote } from '../../Quote';
   styleUrls: ['./quotes-form.component.css'],
 })
 export class QuotesFormComponent implements OnInit {
-  // uname: string;
-  // uauthor: string;
-  // uquote: string;
+  
 
   newQuote: Quote;
   @Output() onPostQuote = new EventEmitter<Quote>();
