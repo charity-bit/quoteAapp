@@ -13,10 +13,16 @@
   
   .quote {
     background-color: rgba(0, 0, 0, 0.7);
-   
     border-radius: 5px;
     margin-top: 5%;
+    transition: all 1s ease-in-out;
   }
+  .quote:hover{
+    background-color: #9D84B7;
+    color: black;
+    transform: scale(1.1);
+  }
+
   .top {
     display: flex;
     justify-content: space-between;

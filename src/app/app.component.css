@@ -30,12 +30,16 @@
   position: relative;
   border-radius: 10px;
   margin-top: 10%;
+  transition: transform 1s ease-in-out;
+}
+.quote:hover{
+     transform: scale(1.2);
 }
 .quote p {
   font-family: "Inconsolata", sans-serif;
   font-size: 1.8rem;
   line-height: 2.7rem;
-  word-spacing: -0.4rem;
+  word-spacing: -0.5rem;
   text-align: justify;
   /* text-justify: distribute-all-lines; */
 }
@@ -67,10 +71,32 @@ small::before {
   background-color: #9d84b7;
 }
 
+.footer{
+  margin-top: 10%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+
+}
+.footer p{
+  font-weight: bold;
+}
+.footer p a{
+  color: #9d84b7;
+  text-decoration: none;
+
+}
 @media screen and (max-width: 700px) {
   .quote {
     width: 60vw;
     margin: 0 auto;
+  }
+  .quotes-cont{
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 400px) {
