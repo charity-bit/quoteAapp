@@ -1,0 +1,76 @@
+.quotes-container{
+    background-color: rgba(0,0,0,0.7);
+    padding: 5% 8%;
+    border-radius: 5px;
+}
+.quote{
+    background-color: rgba(0,0,0,0.7);
+    padding: 5% 8%;
+    border-radius: 5px;
+    margin-top: 5%;
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.left p {
+    font-size: 1.2rem;
+    font-family: "Inconsolata",sans-serif;
+}
+.left small{
+    position: relative;
+    left: 20%;
+}
+.left small::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:-20%;
+    height: 3px;
+    width: 10px;
+    background-color: #9D84B7;
+}
+fa-icon{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.votes{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.votes fa-icon{
+    font-size: 1.4rem;
+
+}
+.votes span{
+    font-size: 1.2rem;
+}
+.likes,.dislikes{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+.dislikes {
+    margin-top: 2%;
+}
+
+
+.main-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 5%;
+    color: white;
+}
+.form-container{
+  width: 50%;
+}
+.quotes-container{
+    width: 50%;
+
+}

@@ -1,1 +1,10 @@
-<p>quotes-details works!</p>
+<div class="details">
+      <div class="left">
+            <p>Posted By: <span>{{quote.name}}</span></p>
+            <p>Posted: <span>{{quote.timePassed}}</span></p>
+      </div>
+      <div class="right">
+            <fa-icon [icon]="deleteIcon" (click)= "deleteQuote(true)"></fa-icon>
+      </div>
+      
+</div>

@@ -1,0 +1,38 @@
+.quotes-form{
+    background-color: rgba(0,0,0,0.7);
+    padding: 5% 8%;
+    border-radius: 5px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 5% 0;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+input,textarea{
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid #9D84B7;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+button{
+    align-self: flex-start;
+    padding: 2% 7%;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2%;
+    border: 1px solid #9D84B7;
+
+}
