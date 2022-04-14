@@ -68,7 +68,7 @@ export class QuotesComponent implements OnInit {
     if (quote.name == '' || quote.author == '' || quote.quote == '') {
       if (quote.name == '') {
         alert('Please enter your name');
-      } else if (quote.author) {
+      } else if (quote.author == '') {
         alert('Please enter the author of the quote');
       } else {
         alert('Please enter the quote');
